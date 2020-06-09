@@ -118,16 +118,17 @@ The major fields or domains associated with ML include the following.
 * A probability density function, also known as PDF, is a probability distribution over continuous random variables. Popular examples include the normal, uniform, and student’s T distributions.
 
 **Conditional Probability**
-* The conditional probability rule is used when we want to determine the probability that an event is going to take place, such that another event has already taken place. This is mathematically represented as follows.</br>
+* The conditional probability rule is used when we want to determine the probability that an event is going to take place, such that another event has already taken place. This is mathematically represented as follows.
 <p align="justify">
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" title="\begin{equation} \color{black} P(A | B) = \frac{P(B | A)P(A)}{P(B)} \end{equation}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(A&space;\cap&space;B)}{P(B)}&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(A&space;\cap&space;B)}{P(B)}&space;\end{equation}" title="\begin{equation} \color{black} P(A | B) = \frac{P(A \cap B)}{P(B)} \end{equation}" />
 </p>
 
 **Bayes Theorem**
 * This is another rule or theorem which is useful when we know the probability of an event of interest P(A), the conditional probability for another event based on our event of interest P(B | A) and we want to determine
 the conditional probability of our event of interest given the other event has taken place P(A | B). This can be defined mathematically using the following expression.
-![$P(A | B) = \frac{P(B | A)P(A)}{P(B)}$](https://render.githubusercontent.com/render/math?math=%24P(A%20%7C%20B)%20%3D%20%5Cfrac%7BP(B%20%7C%20A)P(A)%7D%7BP(B)%7D%24)
-
+<p align="justify">
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" title="\begin{equation} \color{black} P(A | B) = \frac{P(B | A)P(A)}{P(B)} \end{equation}" /></a>
+</p>
 **Statistics**
 	```python
 	# Descriptive statistics
