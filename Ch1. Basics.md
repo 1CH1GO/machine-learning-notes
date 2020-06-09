@@ -203,5 +203,5 @@ mini-batches in ML terminology. However, the training process does not end there
 
 ---
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjQyNDAxNF19
+eyJoaXN0b3J5IjpbMTAzODc3MjQyNCwtOTEyNDI0MDE0XX0=
 -->
