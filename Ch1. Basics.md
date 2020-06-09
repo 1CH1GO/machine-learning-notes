@@ -71,9 +71,7 @@ The major fields or domains associated with ML include the following.
 **Norm**
 * The norm is a measure that is used to compute the size of a vector often also defined as the measure of distance from the origin to the point denoted by the vector. Mathematically, the pth norm of a vector is denoted as follows.
 
-$$
-L^p = ||x_p|| = \biggl(\sum_{i}|x_i|^p\biggr)^\frac{1}{p}
-$$
+![$ L^p = ||x_p|| = \biggl(\sum_{i}|x_i|^p\biggr)^\frac{1}{p} $](https://render.githubusercontent.com/render/math?math=%24%20L%5Ep%20%3D%20%7C%7Cx_p%7C%7C%20%3D%20%5Cbiggl(%5Csum_%7Bi%7D%7Cx_i%7C%5Ep%5Cbiggr)%5E%5Cfrac%7B1%7D%7Bp%7D%20%24)
 
 * Such that p ≥ 1 and p ∈ R. Popular norms in Machine Learning include the L 1 norm used extensively in Lasso regression models and the L 2 norm, also known as the Euclidean norm, used in ridge regression models.
 
@@ -92,9 +90,7 @@ $$
 	```
 **Singuar Value Decomposition**
 * The process of singular value decomposition, also known as SVD, is another matrix decomposition or factorization process such that we are able to break down a matrix to obtain singular vectors and singular values. Any real matrix will always be decomposed by SVD even if eigen decomposition may not be applicable in some cases.
-$$
-M_{m\times n} = U_{m \times n}S_{m \times n}V^T_{n \times n}
-$$
+![$M_{m\times n} = U_{m \times n}S_{m \times n}V^T_{n \times n}$](https://render.githubusercontent.com/render/math?math=%24M_%7Bm%5Ctimes%20n%7D%20%3D%20U_%7Bm%20%5Ctimes%20n%7DS_%7Bm%20%5Ctimes%20n%7DV%5ET_%7Bn%20%5Ctimes%20n%7D%24)
 	```python
 	# SVD
 	m = np.array([[1, 5, 2],
@@ -108,6 +104,7 @@ $$
 	print('S:\n', S, '\n')
 	print('VT:\n', VT, '\n')
 	```
+
 **Random Variable**
 * Used frequently in probability and uncertainty measurement, a random variable is basically a variable that can take on various values at random. These variables can be of discrete or continuous type in general.
 
@@ -122,16 +119,13 @@ $$
 
 **Conditional Probability**
 * The conditional probability rule is used when we want to determine the probability that an event is going to take place, such that another event has already taken place. This is mathematically represented as follows.
-$$
-P(x | y) = \frac{P(x \cap y)}{P(y)}
-$$
+![$P(x | y) = \frac{P(x \cap y)}{P(y)}$](https://render.githubusercontent.com/render/math?math=%24P(x%20%7C%20y)%20%3D%20%5Cfrac%7BP(x%20%5Ccap%20y)%7D%7BP(y)%7D%24)
 
 **Bayes Theorem**
 * This is another rule or theorem which is useful when we know the probability of an event of interest P(A), the conditional probability for another event based on our event of interest P(B | A) and we want to determine
 the conditional probability of our event of interest given the other event has taken place P(A | B). This can be defined mathematically using the following expression.
-$$
-P(A | B) = \frac{P(B | A)P(A)}{P(B)}
-$$
+![$P(A | B) = \frac{P(B | A)P(A)}{P(B)}$](https://render.githubusercontent.com/render/math?math=%24P(A%20%7C%20B)%20%3D%20%5Cfrac%7BP(B%20%7C%20A)P(A)%7D%7BP(B)%7D%24)
+
 **Statistics**
 	```python
 	# Descriptive statistics
