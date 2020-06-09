@@ -119,7 +119,9 @@ The major fields or domains associated with ML include the following.
 
 **Conditional Probability**
 * The conditional probability rule is used when we want to determine the probability that an event is going to take place, such that another event has already taken place. This is mathematically represented as follows.</br>
+<p align="justify">
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" title="\begin{equation} \color{black} P(A | B) = \frac{P(B | A)P(A)}{P(B)} \end{equation}" /></a>
+</p>
 
 **Bayes Theorem**
 * This is another rule or theorem which is useful when we know the probability of an event of interest P(A), the conditional probability for another event based on our event of interest P(B | A) and we want to determine
