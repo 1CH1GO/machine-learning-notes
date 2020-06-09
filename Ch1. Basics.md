@@ -69,7 +69,7 @@ The major fields or domains associated with ML include the following.
 * You can think of a tensor as a generic array. Tensors are basically arrays with a variable number of axes. An element in a three-dimensional tensor T can be denoted by T x,y,z where x, y, z denote the three axes for specifying element T.
 
 **Norm**
-* The norm is a measure that is used to compute the size of a vector often also defined as the measure of distance from the origin to the point denoted by the vector. Mathematically, the pth norm of a vector is denoted as follows.
+* The norm is a measure that is used to compute the size of a vector often also defined as the measure of distance from the origin to the point denoted by the vector. Mathematically, the pth norm of a vector is denoted as follows.</br>
 
 ![$ L^p = ||x_p|| = \biggl(\sum_{i}|x_i|^p\biggr)^\frac{1}{p} $](https://render.githubusercontent.com/render/math?math=%24%20L%5Ep%20%3D%20%7C%7Cx_p%7C%7C%20%3D%20%5Cbiggl(%5Csum_%7Bi%7D%7Cx_i%7C%5Ep%5Cbiggr)%5E%5Cfrac%7B1%7D%7Bp%7D%20%24)
 
@@ -89,7 +89,7 @@ The major fields or domains associated with ML include the following.
 	print('Eigen vectors:\n', eigen_vecs, '\n')
 	```
 **Singuar Value Decomposition**
-* The process of singular value decomposition, also known as SVD, is another matrix decomposition or factorization process such that we are able to break down a matrix to obtain singular vectors and singular values. Any real matrix will always be decomposed by SVD even if eigen decomposition may not be applicable in some cases.
+* The process of singular value decomposition, also known as SVD, is another matrix decomposition or factorization process such that we are able to break down a matrix to obtain singular vectors and singular values. Any real matrix will always be decomposed by SVD even if eigen decomposition may not be applicable in some cases.</br>
 ![$M_{m\times n} = U_{m \times n}S_{m \times n}V^T_{n \times n}$](https://render.githubusercontent.com/render/math?math=%24M_%7Bm%5Ctimes%20n%7D%20%3D%20U_%7Bm%20%5Ctimes%20n%7DS_%7Bm%20%5Ctimes%20n%7DV%5ET_%7Bn%20%5Ctimes%20n%7D%24)
 	```python
 	# SVD
@@ -119,18 +119,20 @@ The major fields or domains associated with ML include the following.
 
 **Conditional Probability**
 * The conditional probability rule is used when we want to determine the probability that an event is going to take place, such that another event has already taken place. This is mathematically represented as follows.
-<p align="justify">
+</br>
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(A&space;\cap&space;B)}{P(B)}&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(A&space;\cap&space;B)}{P(B)}&space;\end{equation}" title="\begin{equation} \color{black} P(A | B) = \frac{P(A \cap B)}{P(B)} \end{equation}" />
-</p>
+
 
 **Bayes Theorem**
 * This is another rule or theorem which is useful when we know the probability of an event of interest P(A), the conditional probability for another event based on our event of interest P(B | A) and we want to determine
-the conditional probability of our event of interest given the other event has taken place P(A | B). This can be defined mathematically using the following expression.
-<p align="justify">
+the conditional probability of our event of interest given the other event has taken place P(A | B). This can be defined mathematically using the following expression.</br>
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" title="\begin{equation} \color{black} P(A | B) = \frac{P(B | A)P(A)}{P(B)} \end{equation}" /></a>
-</p>
+
+
 **Statistics**
-	```python
+
+```python
 	# Descriptive statistics
 	import scipy as sp
 	import numpy as np
@@ -147,7 +149,7 @@ the conditional probability of our event of interest given the other event has t
 	print('Variance:', sp.var(nums))
 	print('Skew:', sp.stats.skew(nums))
 	print('Kurtosis:', sp.stats.kurtosis(nums))
-	```
+```
 
 ---
 
