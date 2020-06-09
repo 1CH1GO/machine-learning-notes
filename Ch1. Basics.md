@@ -118,7 +118,7 @@ The major fields or domains associated with ML include the following.
 * A probability density function, also known as PDF, is a probability distribution over continuous random variables. Popular examples include the normal, uniform, and student’s T distributions.
 
 **Conditional Probability**
-* The conditional probability rule is used when we want to determine the probability that an event is going to take place, such that another event has already taken place. This is mathematically represented as follows.
+* The conditional probability rule is used when we want to determine the probability that an event is going to take place, such that another event has already taken place. This is mathematically represented as follows.</br>
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{equation}&space;\color{black}&space;P(A&space;|&space;B)&space;=&space;\frac{P(B&space;|&space;A)P(A)}{P(B)}&space;\end{equation}" title="\begin{equation} \color{black} P(A | B) = \frac{P(B | A)P(A)}{P(B)} \end{equation}" /></a>
 
 **Bayes Theorem**
