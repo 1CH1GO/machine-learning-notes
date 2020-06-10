@@ -1,4 +1,3 @@
----
 #### Setting up Anaconda for Machine Learning Development
 
 Read [this.](https://machinelearningmastery.com/setup-python-environment-machine-learning-deep-learning-anaconda/)
