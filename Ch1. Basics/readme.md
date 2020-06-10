@@ -46,8 +46,8 @@ The major fields or domains associated with ML include the following.
 	```python
 	import numpy as np
 	m = np.array([[1, 5, 2],
-				 [4, 7, 4],
-				 [2, 0, 9]])
+		       [4, 7, 4],
+		       [2, 0, 9]])
 	
 	print(m)
 	
@@ -80,8 +80,8 @@ The major fields or domains associated with ML include the following.
 	```python
 	# Eigen decomposition
 	m = np.array([[1, 5, 2],
-				  [4, 7, 4],
-				  [2, 0, 9]])
+		       [4, 7, 4],
+		       [2, 0, 9]])
 	
 	eigen_vals, eigen_vecs = np.linalg.eig(m)
 	
@@ -94,8 +94,8 @@ The major fields or domains associated with ML include the following.
 	```python
 	# SVD
 	m = np.array([[1, 5, 2],
-				  [4, 7, 4], 
-				  [2, 0, 9]])
+		       [4, 7, 4], 
+	              [2, 0, 9]])
 	
 	U, S, VT = np.linalg.svd(m)
 	
