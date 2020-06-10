@@ -60,6 +60,50 @@ Read [this.](https://realpython.com/jupyter-notebook-introduction/)
 		arr = np.random.randn(3, 4)
 		print(arr)
 		```
+ * **Accessing  Array Elements**
+	 * Basic Array indexing and slicing:
+		 * Ndarray can leverage the basic indexing operations that are followed by the list class, i.e. list object [obj]. If the obj is not an ndarray object, then the indexing is said to be basic indexing.
+		 * One important point to remember is that basic indexing will always return a view of the original array. It means that it will only refer to the original array and any change in values will be reflected in the original array also.
+		 ```py
+		 arr = np.arange(12).reshape(2, 2, 3)
+		
+		print(arr[0])
+		```
+	* Slicing:
+		```py
+		arr = np.arange(10)
+		print(arr[5:]) # [5, 6, 7, 8, 9]
+		print(arr[5:8]) # [5, 6, 7]  last indexis excluded
+		print(arr[:-5]) # [0, 1, 2, 3, 4]
+		```
+	 * Advanced Indexing
+		 * The difference in advanced indexing and basic indexing comes from the type of object being used to reference the array. If the object is an ndarray object (data type int or bool) or a non-tuple sequence object or a tuple object containing an ndarray (data type integer or bool), then the indexing being done on the array is said to be advanced indexing.
+		 * **Note**: Advanced indexing will always return the copy of the original array data.
+		```py
+		arr = np.arange(9).reshape(3, 3)
+		print(arr[[0, 1, 2], [1, 0, 0]]) # [1, 3, 6]
+		```
+	* Boolean Indexing
+		* This advanced indexing occurs when the reference object is an array of Boolean values. This is used when we want to access data based on some conditions, in that case, Boolean indexing can be used.
+		```py
+		cities = ["delhi", "bangalore", "mumbai", "chennai", "bhopal"]
+		city_data = np.random.randn(5,3)
+		print(city_data[cities =="delhi"])
+		city_data[city_data >0]
+		```
+* **Operations on Arrays**
+	* Numpy provides a rich set of functions that we can leverage for various operations on arrays.
+	* Universal functions are functions that operate on arrays in an element by element fashion. The implementation of Ufunc is vectorized, which means that the execution of Ufuncs on arrays is quite fast. The Ufuncs implemented in the numpy package are implemented in compiled C code for speed and efficiency. But it is possible to write custom functions by extending the numpy.ufunc class of the numpy package.
+	```py
+	arr = np.arange(15).reshape(3, 5)
+	print(arr)
+	print(arr + 5)
+	print(arr * 2)
+	```
+	* Also see how broadcasting is done in NumPy.
+	
+* **Linear Algebra using NumPy**
+	* Linear algebra is an integral part of the domain of Machine Learning. Most of the algorithms we will deal with can be concisely expressed using the operations of linear algebra. One of the most widely used operations in linear algebra is the dot product. This can be performed on two compatible (brush up on your matrices and array skills if you need to know which arrays are compatible for a dot product) ndarrays by using the dot function.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NDUzNDYyOF19
+eyJoaXN0b3J5IjpbMjM5MzM4ODYwXX0=
 -->
