@@ -104,6 +104,38 @@ Read [this.](https://realpython.com/jupyter-notebook-introduction/)
 	
 * **Linear Algebra using NumPy**
 	* Linear algebra is an integral part of the domain of Machine Learning. Most of the algorithms we will deal with can be concisely expressed using the operations of linear algebra. One of the most widely used operations in linear algebra is the dot product. This can be performed on two compatible (brush up on your matrices and array skills if you need to know which arrays are compatible for a dot product) ndarrays by using the dot function.
+		```py
+		A = np.array([[1,2,3],[4,5,6],[7,8,9]])
+	    B = np.array([[9,8,7],[6,5,4],[1,2,3]])
+		print(A.dot(B))
+		```
+	* Tranpose of a matrix
+		```py
+		A = np.arange(15).reshape(3,5)
+		print(A)
+		print(A.T)
+		```
+	* Oftentimes, we need to find out decomposition of a matrix into its constituents factors. This is called matrix factorization. This can be achieved by the appropriate functions. A popular matrix factorization method is SVD factorization (covered briefly in Chapter 1 concepts), which returns decomposition of a matrix into three different matrices. This can be done using linalg.svd function.
+		```py
+		print(np.linalg.svd(A))
+		```
+	* Linear algebra is often also used to solve a system of equations. Using the matrix notation of system of equations and the provided function of numpy, we can easily solve such a system of equation. Consider the system of equations:
+		```
+		7x + 5y -3z = 16
+        3x - 5y + 2z = -8
+        5x + 3y - 7z = 0
+        ```
+        ```py
+        a = np.array([[7,5,-3], [3,-5,2],[5,3,-7]])
+		b = np.array([16,-8,0])
+		x = np.linalg.solve(a, b)
+		print(x)
+		```
+	* Similarly, functions are there for finding the inverse of a matrix, eigen vectors and eigen values of a matrix, norm of a matrix, determinant of a matrix, and so on, some of which we covered in detail in Chapter 1.
+	
+---
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM5MzM4ODYwXX0=
+eyJoaXN0b3J5IjpbMTAyODE0MTY3Nl19
 -->
