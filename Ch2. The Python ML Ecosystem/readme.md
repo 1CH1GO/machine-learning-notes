@@ -134,8 +134,89 @@ Read [this.](https://realpython.com/jupyter-notebook-introduction/)
 	* Similarly, functions are there for finding the inverse of a matrix, eigen vectors and eigen values of a matrix, norm of a matrix, determinant of a matrix, and so on, some of which we covered in detail in Chapter 1.
 	
 ---
+#### Pandas
+* Pandas is an important Python library for data manipulation, wrangling, and analysis. It functions as an intuitive and easy-to-use set of tools for performing operations on any kind of data.
+* **Data Structures of Pandas**
+	* Series
+	* DataFrames
+* **Series**
+	* Series in pandas is a one-dimensional ndarray with an axis label. It means that in functionality, it is almost similar to a simple array. The values in a series will have an index that needs to be hashable. This requirement is needed when we perform manipulation and summarization on data contained in a series data structure.
+* **DataFrame**
+	* Dataframe is the most important and useful data structure, which is used for almost all kind of data representation and manipulation in pandas. Unlike numpy arrays (in general) a dataframe can contain heterogeneous data. Typically tabular data is represented using dataframes, which is analogous to an Excel sheet or a SQL table. This is extremely useful in representing raw datasets as well as processed feature sets in Machine Learning and Data Science. All the operations can be performed along the axes, rows, and columns, in a dataframe.
 
+* **Data Retrieval**
+	* Pandas provides numerous ways to retrieve and read in data. We can convert data from CSV files, databases, flat files, and so on into dataframes. We can also convert a list of dictionaries (Python dict) into a dataframe.
+		* From List of dictionaries
+		* From CSV files
+		* From Databases
 
+	 * **List of dictionaries to DataFrame**
+		 * This is one of the simplest methods to create a dataframe. It is useful in scenarios where we arrive at the data we want to analyze, after performing some computations and manipulations on the raw data.
+			 ```py
+			 import pandas as pd
+			 
+			 d =  [{'city':'Delhi',"data":1000}, 
+					  {'city':'Bangalore',"data":2000},
+					  {'city':'Mumbai',"data":1000}]
+			
+			df = pd.DataFrame(d)
+			print(df)
+			``` 
+			
+	* **CSV Files to DataFrame**
+		* CSV (Comma Separated Files) files are perhaps one of the most widely used ways of creating a dataframe. We can easily read in a CSV, or any delimited file (like TSV), using pandas and convert into a dataframe.
+			```py
+			import pandas as pd
+			
+			data = pd.read_csv('path_of_the_csv_file')
+			print(data.head())
+			```
+			
+	* **Databases to DataFrame**
+		* The most important data source for data scientists is the existing data sources used by their organizations. Relational databases (DBs) and data warehouses are the de facto standard of data storage in almost all of the organizations. Pandas provides capabilities to connect to these databases directly, execute queries on them to extract data, and then convert the result of the query into a structured dataframe.
+			```py
+			server = 'xxxxxxxx' # Address of the database server
+			user = 'xxxxxx'     # the username for the database server
+			password = 'xxxxx'  # Password for the above user
+			database = 'xxxxx'  # Database in which the table is present
+			conn = pymssql.connect(server=server, user=user, password=password, database=database)
+			query = "select * from some_table"
+			df = pd.read_sql(query, conn)
+			```
+			
+* **Data Operations**
+	* **Values attribute**
+		* Each pandas dataframe will have certain attributes. One of the important attributes is values. It is important as it allows us access to the raw values stored in the dataframe and if they all are homogenous i.e., of the same kind then we can use numpy operations on them.
+			```py
+			df = pd.DataFrame(np.random.randn(8, 3), columns=['A', 'B', 'C'])
+			print(df)
+		
+			nparray = df.values
+			print(nparray)
+			```
+			
+	* **Missing data and fillna function**
+		* In real-world datasets, the data is seldom clean and polished. We usually will have a lot of issues with data quality (missing values, wrong values and so on). One of the most common data quality issues is that of missing data. Pandas provides us with a convenient function that allows us to handle the missing values of a dataframe.
+			```py
+			df.iloc[4, 2] = np.nan
+			print(df)
+			
+			df.fillna(0) # Fills NaN values with 0
+			```
+			
+	* **Descriptive Statistics function**
+		* Pandas provide a very useful function called `describe`. This function will calculate the most important statistics for numerical data in one go so that we dont have to use individual functions.
+
+	* **Concatenating Data Frames** 
+		* Most Data Science projects will have data from more than one data source. These data sources will mostly have data that’s related in some way to each other and the subsequent steps in data analysis will require them to be concatenated or joined. Pandas provides a rich set of functions that allow us to merge different data sources.
+		* **Concatenating using `concat` method**
+			```py
+			# assume data_1 and data_2 are two dataframes
+			data_combined = pd.concat([data_1, data_2]) # vertical concat
+			data_combined = pd.concat([data_1, data_2], axis = 1) # horizontal concat 
+			```
+
+---
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyODE0MTY3Nl19
+eyJoaXN0b3J5IjpbLTU5NjkyMjM2NSwxMDI4MTQxNjc2XX0=
 -->
