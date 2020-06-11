@@ -217,6 +217,27 @@ Read [this.](https://realpython.com/jupyter-notebook-introduction/)
 			```
 
 ---
+
+#### Scikit-learn
+Scikit-learn is one of the most important and indispensable Python frameworks for Data Science and Machine Learning in Python. It implements a wide range of Machine Learning algorithms covering major areas of Machine Learning like classification, clustering, regression, and so on. All the mainstream Machine Learning algorithms like support vector machines, logistic regression, random forests, K-means clustering, hierarchical clustering, and many many more, are implemented efficiently in this library. Perhaps this library forms the foundation of applied and practical Machine Learning. Besides this, its easy-to-use API and code design patterns have been widely adopted across other frameworks too!
+
+**Core APIs**
+
+ - Dataset Representation
+ - Estimators
+ - Predictors
+ - Transformers
+
+**Advanced APIs**
+
+- Meta Estimators
+- Pipeline and feature unions
+- Model tuning and selection
+
+---
+
+
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NjkyMjM2NSwxMDI4MTQxNjc2XX0=
+eyJoaXN0b3J5IjpbLTE3OTk5MzQ5MDMsMTAyODE0MTY3Nl19
 -->
