@@ -17,6 +17,40 @@ Data is at the center of everything around us, which is a tremendous opportunity
 		
 		data = pd.read_json(file_name, orient="record")
 		```
+	
+- **Data Description**
+	- **Numeric**
+	This is simplest of the data types available. It is also the type that is directly usable and understood by most algorithms (though this does not imply that we use numeric data in its raw form). Numeric data represents scalar information about entities being observed, for instance, number of visits to a web site, price of a product, weight of a person, and so on. Numeric values also form the basis of vector features, where each dimension is represented by a scalar value. The scale, range, and distribution of numeric data has an implicit effect on the algorithm and/or the overall workflow. For handling numeric data, we use techniques such as normalization, binning, quantization, and many more to transform numeric data as per our requirements.
+
+	- **Text**
+	Data comprising of unstructured, alphanumeric content is one of most common data types. Textual data when representing human language content contains implicit grammatical structure and meaning. This type of data requires additional care and effort for transformation and understanding.
+	
+	- **Categorical**
+	This data type stands in between the numeric and text. Categorical variables refer to categories of entities being observed. For instance, hair color being black, brown, blonde and red or economic status as low, medium, or high. The values may be represented as numeric or alphanumeric, which describe properties of items in consideration. Based on certain characteristics, categorical variables can be seen as: 
+		- Nominal: Without any ordering.
+		- Ordinal : With ordering ex. low, medium, high
+
+* **Data Wrangling**
+Data wrangling or data munging is the process of cleaning, transforming, and mapping data from one form to another to utilize it for tasks such as analytics, summarization, reporting, visualization, and so on. 
+	
+	- **Understanding Data**
+		```py
+		# df is the pandas dataframe
+		
+		print('Number of rows::', df.shape[0])
+		print('Number of columns::', df.shape[1])
+		print('Column names::', df.columns.values.tolist())
+		print('Column data types::',  df.types())
+
+		print('Columns with missing values::', df.columns[df.isnull().any()].tolist())
+		print('Number of rows with missing values::', len(pd.isnull(df).any(1).nonzero()[0].tolist())
+		
+		print('General Stats::')
+		print(df.info())
+		
+		print('Summary Stats::')
+		print(df.describe()) 
+	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMDQ1NjA5XX0=
+eyJoaXN0b3J5IjpbLTU1MzI0NjI0OCwtNDIwNDU2MDldfQ==
 -->
